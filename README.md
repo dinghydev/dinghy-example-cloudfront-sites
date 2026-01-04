@@ -1,6 +1,7 @@
 # dinghy-example-cloudfront-sites - A Dinghy Project
 
-End to end working IaC demo project for
+This is a complete, end-to-end Infrastructure as Code (IaC) example project
+using Dinghy, showcasing the
 [CloudFront Sites Demo](https://dinghy.dev/examples/tf-aws/composites/cloudfront-sites/demo).
 
 ## Local Development

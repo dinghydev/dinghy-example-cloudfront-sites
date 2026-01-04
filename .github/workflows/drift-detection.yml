@@ -1,4 +1,4 @@
-name: drift-detection
+name: Drift Detection
 on:
   schedule:
     - cron: '15 2 * * *'
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dinghydev/install-dinghy-cli@main
+      - uses: dinghydev/install-dinghy-cli@v1
       - run: dinghy check
       - run: dinghy render
   diff:
@@ -28,7 +28,7 @@ jobs:
         with:
           aws-region: ${{ secrets.AWS_DEPLOY_REGION }}
           role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE }}
-      - uses: dinghydev/install-dinghy-cli@main
+      - uses: dinghydev/install-dinghy-cli@v1
         with:
           prepare-images: release,tf
       - run: dinghy tf diff
