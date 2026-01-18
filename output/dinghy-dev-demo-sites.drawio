@@ -33,7 +33,7 @@
           style="verticalAlign=top;aspect=fixed;align=center;spacingLeft=5;spacingRight=5;spacingBottom=5;strokeColor=none;" 
           id="stack" 
           parent="root" 
-          value="Dinghy Dev Demo Sites" 
+          value="dinghy.dev Demo Sites" 
           vertex="1"
           >
           <mxGeometry
@@ -46,7 +46,7 @@
           </mxCell>
         <mxCell
           style="verticalAlign=top;aspect=fixed;align=left;spacingLeft=30;spacingRight=5;spacingBottom=5;points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;fontColor=#232F3E;dashed=0;" 
-          id="awsprovider_euwest1" 
+          id="provider_euwest1" 
           parent="stack" 
           value="eu-west-1" 
           vertex="1"
@@ -62,7 +62,7 @@
         <mxCell
           style="verticalAlign=top;aspect=fixed;align=center;spacingLeft=5;spacingRight=5;spacingBottom=5;noLabel=1;opacity=0;" 
           id="cloudfrontsites" 
-          parent="awsprovider_euwest1" 
+          parent="provider_euwest1" 
           value="Cloudfront Sites" 
           vertex="1"
           >
@@ -347,7 +347,7 @@
         <mxCell
           style="verticalAlign=top;aspect=fixed;align=center;spacingLeft=5;spacingRight=5;spacingBottom=5;" 
           id="infrastructure" 
-          parent="awsprovider_euwest1" 
+          parent="provider_euwest1" 
           value="Infrastructure" 
           vertex="1"
           >
@@ -357,6 +357,36 @@
             height="140" 
             x="30" 
             y="531"
+            />
+          </mxCell>
+        <mxCell
+          style="verticalAlign=top;aspect=fixed;align=center;spacingLeft=5;spacingRight=5;spacingBottom=5;noLabel=1;opacity=0;" 
+          id="backend" 
+          parent="infrastructure" 
+          value="Backend" 
+          vertex="1"
+          >
+          <mxGeometry
+            width="60" 
+            as="geometry" 
+            height="110" 
+            x="37.375" 
+            y="15"
+            />
+          </mxCell>
+        <mxCell
+          style="rounded=1;whiteSpace=wrap;verticalAlign=top;align=center;sketch=0;outlineConnect=0;fontColor=#CD2264;gradientColor=none;fillColor=#7AA116;strokeColor=#CD2264;dashed=0;verticalLabelPosition=bottom;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.bucket;" 
+          id="awss3bucket_backend" 
+          parent="backend" 
+          value="Backend Bucket" 
+          vertex="1"
+          >
+          <mxGeometry
+            as="geometry" 
+            width="60" 
+            height="60" 
+            x="0" 
+            y="15"
             />
           </mxCell>
         <mxCell
@@ -370,7 +400,7 @@
             as="geometry" 
             width="60" 
             height="60" 
-            x="69.83333333333334" 
+            x="157.125" 
             y="30"
             />
           </mxCell>
@@ -385,7 +415,7 @@
             as="geometry" 
             width="60" 
             height="60" 
-            x="239.5" 
+            x="291.875" 
             y="30"
             />
           </mxCell>
@@ -400,7 +430,7 @@
             as="geometry" 
             width="60" 
             height="60" 
-            x="409.1666666666667" 
+            x="426.625" 
             y="30"
             />
           </mxCell>
