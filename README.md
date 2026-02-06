@@ -1,12 +1,12 @@
-# dinghy-example-cloudfront-sites - A Dinghy Project
+# A Dinghy powered Cloudfront Demo Site
 
 This is a complete, end-to-end Infrastructure as Code (IaC) example project
 using Dinghy, showcasing the
-[CloudFront Sites Demo](https://dinghy.dev/examples/tf-aws/composites/cloudfront-sites/demo).
+[CloudFront Sites](https://dinghy.dev/show-cases/cloudfront-sites).
 
 ## Generate Deployment Diagram
 
-![Deployment Diagram](output/app.png)
+![Deployment Diagram](output/dinghy-dev-demo-sites.png)
 
 ## Local Development
 
@@ -24,22 +24,26 @@ Need only once if not already done:
 
     dinghy render
 
-### To perform basic tf actions
-
-    dinghy tf init
-    dinghy tf plan
-    dinghy tf apply
-
-### Combined tf action
+### Performing tf diff
 
     dinghy tf diff
 
-Which does following:
+This command performs the following steps:
 
-1. render --format tf
-2. tf init
-3. tf plan
-4. Additional CICD notification and manual job triggering
+1. Renders all files in Terraform format (`render --format tf`)
+2. Initializes Terraform (`tf init`)
+3. Plans the changes with Terraform (`tf plan`)
+4. Triggers additional CI/CD notifications and allows for manual job approval
+
+### Performing tf deploy
+
+    dinghy tf deploy
+
+This command executes the following steps:
+
+1. Initializes Terraform (`tf init`)
+2. Applies the changes using Terraform (`tf apply`)
+3. Triggers additional CI/CD notifications
 
 ## Dinghy documentation
 
